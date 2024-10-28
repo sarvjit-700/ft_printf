@@ -1,7 +1,8 @@
 NAME = libftprintf.a
 INC = libftprintf.h
 
-CFILES = ft_printf.c ft_putchar.c ft_putstr.c ft_putnbr.c ft_lowhex.c
+CFILES = ft_printf.c ft_putchar.c ft_putstr.c ft_putnbr.c\
+	 ft_lowhex.c ft_putptr.c ft_putunit.c ft_uphex.c
 
 OFILES = $(CFILES:.c=.o)
 
@@ -17,11 +18,9 @@ $(NAME): $(OFILES)
 	echo "Creating libftprintf.a"
 	ar rcs $(NAME) $(OFILES)
 
-	ar rcs $(NAME) $(OFILES) $(BSOBJ)
-
 clean:
 	echo "Running clean"
-	rm -f $(OFILES) $(BSOBJ)
+	rm -f $(OFILES)
 
 fclean: clean
 	echo "Running fclean"
