@@ -6,11 +6,11 @@
 /*   By: ssukhija <ssukhija@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/22 12:22:57 by ssukhija          #+#    #+#             */
-/*   Updated: 2024/10/28 17:12:36 by ssukhija         ###   ########.fr       */
+/*   Updated: 2024/11/04 10:31:55 by ssukhija         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libftprintf.h"
+#include "ft_printf.h"
 
 int	ft_lowhex(long nb)
 {

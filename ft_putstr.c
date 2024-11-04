@@ -6,11 +6,11 @@
 /*   By: ssukhija <ssukhija@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/22 10:07:05 by ssukhija          #+#    #+#             */
-/*   Updated: 2024/10/28 17:14:52 by ssukhija         ###   ########.fr       */
+/*   Updated: 2024/11/04 10:33:36 by ssukhija         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libftprintf.h"
+#include "ft_printf.h"
 
 int	ft_putstr(char *str)
 {

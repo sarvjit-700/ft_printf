@@ -1,5 +1,5 @@
 NAME = libftprintf.a
-INC = libftprintf.h
+INC = ft_printf.h
 
 CFILES = ft_printf.c ft_putchar.c ft_putstr.c ft_putnbr.c\
 	 ft_lowhex.c ft_putptr.c ft_putunit.c ft_uphex.c

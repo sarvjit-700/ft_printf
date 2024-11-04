@@ -1,38 +1,28 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_putnbr.c                                        :+:      :+:    :+:   */
+/*   ft_printf.h                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ssukhija <ssukhija@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/10/22 11:09:34 by ssukhija          #+#    #+#             */
-/*   Updated: 2024/11/04 10:32:45 by ssukhija         ###   ########.fr       */
+/*   Created: 2024/10/21 11:04:35 by ssukhija          #+#    #+#             */
+/*   Updated: 2024/11/04 10:33:20 by ssukhija         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "ft_printf.h"
+#ifndef FT_PRINTF_H
+# define FT_PRINTF_H
+# include <unistd.h>
+# include <stdlib.h>
+# include <stdarg.h>
 
-int	ft_putnbr(int nb)
-{
-	long	nbr;
-	int		count;
+int	ft_printf(const char *format, ...);
+int	ft_putstr(char *str);
+int	ft_putchar(int c);
+int	ft_putnbr(int nb);
+int	ft_lowhex(long nb);
+int	ft_uphex(long nb);
+int	ft_putptr(void *ptr);
+int	ft_putunit(unsigned int nb);
 
-	count = 0;
-	nbr = nb;
-	if (nbr < 0)
-	{
-		ft_putchar('-');
-		nbr = -nbr;
-		count += 1;
-	}
-	if (nbr >= 10)
-	{
-		count += ft_putnbr(nbr / 10);
-		count += ft_putnbr(nbr % 10);
-	}
-	if (nbr < 10)
-	{
-		count += ft_putchar(nbr + 48);
-	}
-	return (count);
-}
+#endif

@@ -6,11 +6,11 @@
 /*   By: ssukhija <ssukhija@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/21 10:58:58 by ssukhija          #+#    #+#             */
-/*   Updated: 2024/10/28 17:13:11 by ssukhija         ###   ########.fr       */
+/*   Updated: 2024/11/04 10:32:14 by ssukhija         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libftprintf.h"
+#include "ft_printf.h"
 
 int	ft_checkelmt(char specifier, va_list args)
 {
