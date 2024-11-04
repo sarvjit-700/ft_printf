@@ -12,17 +12,17 @@
 
 #include "ft_printf.h"
 
-int	ft_putptr(void *ptr)
+int	ft_putptr(unsigned long n)
 {
 	int				count;
 	unsigned long	addr;
 
 	count = 0;
-	if (ptr == NULL)
+	if (n == 0)
 		count = ft_putstr("(nil)");
 	else
 	{
-		addr = (unsigned long)ptr;
+		addr = n;
 		count = ft_putstr("0x");
 		count += ft_lowhex(addr);
 	}

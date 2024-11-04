@@ -6,7 +6,7 @@
 /*   By: ssukhija <ssukhija@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/21 11:04:35 by ssukhija          #+#    #+#             */
-/*   Updated: 2024/11/04 10:33:20 by ssukhija         ###   ########.fr       */
+/*   Updated: 2024/11/04 12:30:02 by ssukhija         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,14 +15,15 @@
 # include <unistd.h>
 # include <stdlib.h>
 # include <stdarg.h>
+# include <limits.h>
 
 int	ft_printf(const char *format, ...);
 int	ft_putstr(char *str);
 int	ft_putchar(int c);
 int	ft_putnbr(int nb);
-int	ft_lowhex(long nb);
-int	ft_uphex(long nb);
-int	ft_putptr(void *ptr);
+int	ft_lowhex(unsigned long nb);
+int	ft_uphex(unsigned long nb);
+int	ft_putptr(unsigned long n);
 int	ft_putunit(unsigned int nb);
 
 #endif

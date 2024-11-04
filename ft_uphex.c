@@ -12,7 +12,7 @@
 
 #include "ft_printf.h"
 
-int	ft_uphex(long nb)
+int	ft_uphex(unsigned long nb)
 {
 	int		count;
 	char	*symbols;

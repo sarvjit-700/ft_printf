@@ -6,7 +6,7 @@
 /*   By: ssukhija <ssukhija@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/21 10:58:58 by ssukhija          #+#    #+#             */
-/*   Updated: 2024/11/04 10:32:14 by ssukhija         ###   ########.fr       */
+/*   Updated: 2024/11/04 12:27:57 by ssukhija         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,12 +26,12 @@ int	ft_checkelmt(char specifier, va_list args)
 	else if (specifier == 'x' || specifier == 'X')
 	{
 		if (specifier == 'x')
-			count += ft_lowhex((long)va_arg(args, unsigned int));
+			count += ft_lowhex((unsigned long)va_arg(args, unsigned int));
 		else
 			count += ft_uphex((long)va_arg(args, unsigned int));
 	}
 	else if (specifier == 'p')
-		count += ft_putptr(va_arg(args, void *));
+		count += ft_putptr(va_arg(args, unsigned long));
 	else if (specifier == 'u')
 		count += ft_putunit(va_arg(args, unsigned int));
 	else
